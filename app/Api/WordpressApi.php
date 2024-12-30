@@ -26,8 +26,8 @@ class WordPressApi
     public function __construct()
     {
         // $this->baseUri = 'https://maqueta.online';
-        $this->username = 'dani.venegas';
-        $this->password = 'q$)owHhWzX@&OPNg';
+        $this->username = env('WP_USERNAME');
+        $this->password = env('WP_PASSWORD');
         
         $this->client = new Client([
             'base_uri' => self::BASEURI,
